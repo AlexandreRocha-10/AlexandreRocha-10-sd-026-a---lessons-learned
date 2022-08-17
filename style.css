@@ -86,7 +86,8 @@ h2 {
 
 .lado-esquerdo {
     display: inline-block;
-    width: 48%;
+    width: 40%;
+    float: left;
     padding: 10px 10px 20px 10px;
     border: 1px solid #BFBFBF;
     background-color: grey;
@@ -94,11 +95,15 @@ h2 {
     list-style: none;
     font-size: 1.2em;
     line-height: 1.2em;
+    min-height: 100px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .lado-direito {
     display: inline-block;
-    width: 48%;
+    float: right;
+    width: 55%;
     padding: 10px 10px 20px 10px;
     border: 1px solid #BFBFBF;
     background-color: grey;
@@ -106,11 +111,22 @@ h2 {
     list-style: none;
     font-size: 1.2em;
     line-height: 1.2em;
+    min-height: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 table, th, td {
     border:1px solid black;
-  }
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+table a:hover {
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.5s;
+}
 
 #rodape {
     margin-top: 20px;
